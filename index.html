@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="hero-img.png">
+    <link rel="icon" href="hero-img.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>worque.</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav data-aos="fade-down">
         <div class="left">
           <div class="logo">worque.</div>
           <div class="nav-items">
@@ -27,11 +28,11 @@
     </header>
     <section class="hero">
       <div class="hero-container">
-        <div class="column-left">
+        <div class="column-left" data-aos="fade-right">
           <div class="left-content">
             <h1>Integrate your</h1>
             <br />
-            <div style="display: flex; align-items: center;">
+            <div style="display: flex; align-items: center">
               <h1>stack</h1>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,12 +46,11 @@
                 ></path>
               </svg>
               <h1>automate</h1>
-          
             </div>
             <h1>your work</h1>
           </div>
 
-          <p style="margin-top: 30px;">
+          <p style="margin-top: 30px">
             Evolve at the speed and scale of your business with the leader in
             low-code automation.
           </p>
@@ -59,12 +59,19 @@
             <button class="get-demo-btn">Get demo</button>
           </div>
         </div>
-        <div class="column-right">
+        <div class="column-right" data-aos="fade-left">
           <div class="hero-image">
             <img src="hero-img.png" alt="" />
           </div>
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 100,
+      });
+    </script>
   </body>
 </html>
